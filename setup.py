@@ -14,5 +14,10 @@ setup(
     long_description=open('README.md').read() if os.path.exists('README.md') else "",
     long_description_content_type="text/markdown",
     url="https://github.com/Leon42325/dsss_homework_2",
+    entry_points={
+        "console_scripts": [
+            "math_quiz = math_quiz.math_quiz:math_quiz",  # 指向 math_quiz.py 里的 math_quiz() 函数
+        ],
+    },
 
 )
